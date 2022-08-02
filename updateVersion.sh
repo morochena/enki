@@ -1,5 +1,3 @@
-#
-
 # if argument is not given, exit
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <version>"
