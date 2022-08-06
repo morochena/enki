@@ -92,7 +92,7 @@ def study_cycle(cards):
 
 def mark_as_forgotten(card):
     n_forgotten = int(card[4]) + 1
-    interval = int(card[5]) / 2
+    interval = int(int(card[5]) / 2)
     if interval < 1:
         interval = 1
     deck = card[6]
@@ -117,7 +117,7 @@ def mark_as_forgotten(card):
 
 def mark_as_remembered(card):
     n_remembered = int(card[3]) + 1
-    interval = int(card[5]) * 2
+    interval = int(int(card[5]) * 2)
     if interval < 1:
         interval = 1
     deck = card[6]
